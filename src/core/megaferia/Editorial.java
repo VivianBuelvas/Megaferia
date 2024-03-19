@@ -4,10 +4,21 @@
  */
 package core.megaferia;
 
+import core.book.Libro;
+import core.person.Gerente;
+import java.util.ArrayList;
+
 /**
  *
  * @author pc
  */
 public class Editorial {
-    
+ 
+    private String nit;
+    private String nombre;
+    private String dirección;
+    private Gerente gerente;
+    private ArrayList<Libro> libros;
+    private ArrayList<Stand> stands;            
+                        
 }

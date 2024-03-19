@@ -1,13 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package core.person;
 
-/**
- *
- * @author pc
- */
-public class Gerente {
+import core.megaferia.Editorial;
+
+
+public class Gerente extends Persona{
+    
+    private Editorial editorial;
+
+    public Gerente(Editorial editorial, String nombre, int cédula) {
+        super(nombre, cédula);
+        this.editorial = editorial;
+    }
+    
+    //getters and setters de Gerente
+
+    public Editorial getEditorial() {
+        return editorial;
+    }
+
+    public void setEditorial(Editorial editorial) {
+        this.editorial = editorial;
+    }
+    
     
 }

@@ -1,13 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package core.person;
 
-/**
- *
- * @author pc
- */
-public class Narrador {
+import core.book.Audiolibro;
+import java.util.ArrayList;
+
+
+public class Narrador extends Persona{    
+    private ArrayList<Audiolibro> libros;
+
+    public Narrador(ArrayList<Audiolibro> libros, String nombre, int cédula) {
+        super(nombre, cédula);
+        this.libros = libros;
+    }
+    
+    //getters and setters de Narrador
+
+    public ArrayList<Audiolibro> getLibros() {
+        return libros;
+    }
+
+    public void setLibros(ArrayList<Audiolibro> libros) {
+        this.libros = libros;
+    }
+    
     
 }
